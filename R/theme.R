@@ -4,14 +4,15 @@
 #'
 #' @export
 theme_mythesis <- function(...) {
-  ggplot2::theme_bw(base_family = 'Ubuntu Mono') +
+  ggplot2::theme_minimal(base_family = 'Ubuntu Mono', 
+                         base_size = 14) +
     ggplot2::theme(plot.title = element_text(face = 'bold', 
                                              size = 16, 
-                                             colour = '#357935'),
-                   panel.grid.major = element_line(linetype = 'longdash'),
-                   panel.grid.minor = element_line(linetype = 'longdash'),
-                   strip.background = element_rect(fill = '#357935',
-                                                   colour = '#357935'),
+                                             colour = '#ffffff'),
+                   #panel.grid.major = element_line(linetype = 'longdash'),
+                   #panel.grid.minor = element_line(linetype = 'longdash'),
+                   #strip.background = element_rect(fill = '#357935',
+                   #                                colour = '#357935'),
                    strip.text = element_text(color = '#ffffff'), ...)
 }
 
@@ -24,7 +25,6 @@ theme_mythesis <- function(...) {
 #' @export
 mythesis_pal <- function(palette = "main", reverse = FALSE, ...) {
   pal <- list(main = wes_palettes[["Darjeeling1"]], secondary = wes_palettes[["GrandBudapest1"]], grey = c("#CCCCCC", "#8C8C8C"))[[palette]] # mythesisthemes::colors[[palette]]
-
 
   if (reverse) pal <- rev(pal)
 
