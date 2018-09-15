@@ -1,0 +1,14 @@
+Package: mythesisthemes
+Title: ggplot2 themes used in my Phd thesis
+Version: 0.0.1
+Authors@R: person("Rumenick Pereira da", "Silva", email = "rumencikps@gmail.com", role = c("aut", "cre"))
+Description: Auxiliar R package.
+Depends: R (>= 3.4.4)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports:
+  ggplot2,
+  grDevices,
+  wesanderson
+RoxygenNote: 6.1.0
